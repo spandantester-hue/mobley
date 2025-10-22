@@ -1,0 +1,25 @@
+<html>
+<body>
+  <head></head>
+<script src="https://widget.simplybook.it/react-widget/public/runtime.js"></script>
+<script src="https://widget.simplybook.it/react-widget/public/app.js"></script>
+<link rel="stylesheet" href="https://widget.simplybook.it/react-widget/public/app.css">
+
+<div id="sb_widget"></div>
+
+<script>
+    window.addEventListener("load", () => {
+        const themeSettings = {"colors_accent":"#183046","colors_accent_contrast":"#ffffff","colors_text":"#0b3052","colors_text_secondary":"#6d7785","colors_border":"#e7eaee","colors_background":"#ffffff","colors_link":"#216fec","font_sizes_h2":"24px","font_sizes_h3":"20px","font_sizes_p":"16px"};
+        // const predefined = [];
+
+        const widgetContainer = document.getElementById('sb_widget');
+        SimplyBookWidget(widgetContainer, {
+            apiKey: "35a8707e6948600493ca174d02b92e39ae22c822da6c862355f2dcf0ff130bb7",
+            company: "mobley",
+            baseUrl: "https://user-api-v2.simplybook.it",
+            theme:  themeSettings
+        });
+    });
+</script>
+<body>
+</html>
