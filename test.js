@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sessionToken = sessionStorage.getItem("token");
-    const localToken = localStorage.getItem("token");
+    const sessionToken = sessionStorage.getItem("sb_client_token");
+    const localToken = localStorage.getItem("sb_client_token");
     const token = sessionToken || localToken;
 
     if (token) {
